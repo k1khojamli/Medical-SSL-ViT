@@ -177,7 +177,7 @@ for epoch in range(epochs):
 
     #evaluation
     classifier.eval()
-    test_loss =0
+    test_loss = 0
     with torch.no_grad():
         for batch_idx,(x, y) in tqdm(enumerate(test_loader),total=len(test_loader)):
             x, y = x.to(device), y.to(device)
